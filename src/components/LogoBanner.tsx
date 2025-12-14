@@ -35,13 +35,13 @@ const LogoBanner = () => {
               {/* Central Logo */}
               <div className="absolute inset-20 rounded-full bg-gradient-to-br from-background via-cosmic-purple/10 to-background backdrop-blur-md border border-primary/20 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-4xl sm:text-5xl font-orbitron font-bold text-gradient-cosmic mb-2">
+                  <div className="text-4xl sm:text-5xl font-orbitron font-bold text-gradient-cosmic mb-2 animate-float-3d">
                     GROW UP
                   </div>
-                  <div className="text-lg sm:text-xl text-cosmic-cyan font-orbitron tracking-widest">
+                  <div className="text-lg sm:text-xl text-cosmic-cyan font-orbitron tracking-widest animate-float animation-delay-400">
                     MUSIC
                   </div>
-                  <div className="text-xs text-muted-foreground mt-1 tracking-wider">
+                  <div className="text-xs text-muted-foreground mt-1 tracking-wider animate-pulse animation-delay-800">
                     ENTERTAINMENT
                   </div>
                 </div>
@@ -58,15 +58,50 @@ const LogoBanner = () => {
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-primary/20 via-transparent to-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />
           </div>
           
-          {/* Caption */}
-          <div className="mt-8 space-y-4">
-            <h3 className="font-orbitron text-2xl md:text-3xl font-bold text-gradient-cosmic">
-              Official Brand Identity
-            </h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Logo resmi Grow Up Music Entertainment yang menggambarkan semangat eksplorasi musik 
-              dengan tema cosmic dan futuristik, melambangkan perjalanan musikal yang tak terbatas.
-            </p>
+          {/* Futuristic Floating Text */}
+          <div className="mt-8 space-y-6">
+            {/* Main Title with 3D floating effect */}
+            <div className="relative">
+              <h3 className="font-orbitron text-3xl md:text-4xl font-bold text-gradient-cosmic animate-float-3d animate-text-glow">
+                Grow Up Music
+              </h3>
+              {/* Floating letters effect */}
+              <div className="absolute inset-0 pointer-events-none">
+                <span className="absolute -top-4 left-8 text-cosmic-cyan text-lg font-orbitron animate-orbit-text opacity-40">G</span>
+                <span className="absolute -top-2 right-12 text-cosmic-pink text-sm font-orbitron animate-floating-letters animation-delay-400 opacity-50">R</span>
+                <span className="absolute -top-6 left-1/3 text-cosmic-purple text-base font-orbitron animate-floating-letters animation-delay-800 opacity-45">O</span>
+                <span className="absolute -top-3 right-1/4 text-cosmic-cyan text-xs font-orbitron animate-orbit-text animation-delay-600 opacity-40">W</span>
+                <span className="absolute -top-5 left-1/2 text-star-glow text-sm font-orbitron animate-floating-letters animation-delay-1000 opacity-35">★</span>
+                <span className="absolute -top-1 left-16 text-cosmic-pink text-xs font-orbitron animate-orbit-text animation-delay-200 opacity-30">♪</span>
+              </div>
+            </div>
+            
+            {/* Animated subtitle */}
+            <div className="relative overflow-hidden">
+              <p className="text-muted-foreground max-w-2xl mx-auto animate-slide-up animation-delay-200">
+                <span className="inline-block animate-float animation-delay-200">Grow</span>{" "}
+                <span className="inline-block animate-float animation-delay-400">Up</span>{" "}
+                <span className="inline-block animate-float animation-delay-600">Music</span>{" "}
+                <span className="inline-block animate-float animation-delay-800">Entertainment</span>{" "}
+                <span className="inline-block animate-float animation-delay-1000">yang</span>{" "}
+                <span className="inline-block animate-float animation-delay-200">menggambarkan</span>{" "}
+                <span className="inline-block animate-float animation-delay-400">semangat</span>{" "}
+                <span className="inline-block animate-float animation-delay-600">eksplorasi</span>{" "}
+                <span className="inline-block animate-float animation-delay-800">musik</span>
+                <br />
+                <span className="inline-block animate-float animation-delay-1000">dengan</span>{" "}
+                <span className="inline-block animate-float animation-delay-200">tema</span>{" "}
+                <span className="inline-block animate-float animation-delay-400">cosmic</span>{" "}
+                <span className="inline-block animate-float animation-delay-600">dan</span>{" "}
+                <span className="inline-block animate-float animation-delay-800">futuristik,</span>{" "}
+                <span className="inline-block animate-float animation-delay-1000">melambangkan</span>{" "}
+                <span className="inline-block animate-float animation-delay-200">perjalanan</span>{" "}
+                <span className="inline-block animate-float animation-delay-400">musikal</span>{" "}
+                <span className="inline-block animate-float animation-delay-600">yang</span>{" "}
+                <span className="inline-block animate-float animation-delay-800">tak</span>{" "}
+                <span className="inline-block animate-float animation-delay-1000">terbatas.</span>
+              </p>
+            </div>
             
             {/* Brand Values */}
             <div className="flex flex-wrap justify-center gap-4 mt-6">

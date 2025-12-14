@@ -6,21 +6,21 @@ const ServicesSection = () => {
       icon: Users,
       title: "Full Band",
       description: "Formasi lengkap dengan semua instrumen untuk penampilan yang megah dan energik",
-      image: "/placeholder.svg",
+      image: "/band-3.jpg",
       features: ["Vocal", "Guitar", "Bass", "Drum", "Keyboard"],
     },
     {
       icon: Guitar,
       title: "Band Akustik",
       description: "Nuansa hangat dan intim dengan aransemen akustik yang menyentuh hati",
-      image: "/placeholder.svg",
+      image: "/acoustic.jpg",
       features: ["Acoustic Guitar", "Cajon", "Vocal", "Violin", "Keyboard"],
     },
     {
       icon: Mic2,
       title: "Solois Akustik",
       description: "Penampilan solo yang personal dan cocok untuk acara intimate",
-      image: "/placeholder.svg",
+      image: "/soloist.jpg",
       features: ["Vocal", "Guitar/Keyboard", "Backing Track"],
     },
   ];
@@ -62,7 +62,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Main Services */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
           {services.map((service, index) => (
             <div
               key={index}
@@ -100,7 +100,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Additional Services */}
-        <div className="grid sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
           {additionalServices.map((service, index) => (
             <div
               key={index}

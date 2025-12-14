@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url(/placeholder.svg)`,
+          backgroundImage: `url(/hero-bg.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -16,23 +16,23 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
       </div>
 
-      {/* Floating Music Elements */}
-      <div className="absolute top-1/4 left-10 animate-float animation-delay-200">
+      {/* Floating Music Elements - Hidden on mobile for better performance */}
+      <div className="hidden md:block absolute top-1/4 left-10 animate-float animation-delay-200">
         <div className="w-16 h-16 rounded-full glass-card flex items-center justify-center glow-primary">
           <span className="text-2xl">🎸</span>
         </div>
       </div>
-      <div className="absolute top-1/3 right-16 animate-float animation-delay-600">
+      <div className="hidden md:block absolute top-1/3 right-16 animate-float animation-delay-600">
         <div className="w-12 h-12 rounded-full glass-card flex items-center justify-center glow-secondary">
           <span className="text-xl">🎹</span>
         </div>
       </div>
-      <div className="absolute bottom-1/3 left-1/4 animate-float animation-delay-400">
+      <div className="hidden md:block absolute bottom-1/3 left-1/4 animate-float animation-delay-400">
         <div className="w-14 h-14 rounded-full glass-card flex items-center justify-center glow-accent">
           <span className="text-2xl">🎷</span>
         </div>
       </div>
-      <div className="absolute bottom-1/4 right-1/4 animate-float animation-delay-800">
+      <div className="hidden md:block absolute bottom-1/4 right-1/4 animate-float animation-delay-800">
         <div className="w-10 h-10 rounded-full glass-card flex items-center justify-center glow-primary">
           <span className="text-lg">🎻</span>
         </div>
@@ -51,21 +51,21 @@ const HeroSection = () => {
           </div>
 
           {/* Title */}
-          <h1 className="font-orbitron text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-slide-up">
+          <h1 className="font-orbitron text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-slide-up">
             <span className="text-gradient-cosmic">GROW UP</span>
             <br />
             <span className="text-foreground">MUSIC</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="font-exo text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-200">
+          <p className="font-exo text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-200">
             Menjelajahi Harmoni di Galaksi Musik
             <br />
             <span className="text-primary">Entertainment Profesional</span> untuk Setiap Momen Istimewa Anda
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up animation-delay-400">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up animation-delay-400 px-4">
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">
                 <Play className="w-5 h-5" />

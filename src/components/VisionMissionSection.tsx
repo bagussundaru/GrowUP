@@ -37,7 +37,7 @@ const VisionMissionSection = () => {
             </p>
             
             {/* Vision Points */}
-            <div className="grid grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-8">
               {[
                 { icon: Sparkles, label: "Energi Positif" },
                 { icon: TrendingUp, label: "Terus Berkembang" },
@@ -72,7 +72,7 @@ const VisionMissionSection = () => {
             </p>
             
             {/* Mission Points */}
-            <div className="grid grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-8">
               {[
                 { icon: Heart, label: "Kepuasan Klien" },
                 { icon: Users, label: "Penampilan Unik" },

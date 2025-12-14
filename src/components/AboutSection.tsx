@@ -9,14 +9,14 @@ const AboutSection = () => {
           <div className="relative">
             <div className="relative z-10 rounded-2xl overflow-hidden glow-primary hover-glow">
               <img
-                src="/placeholder.svg"
+                src="/band-1.jpg"
                 alt="Grow Up Music Band"
                 className="w-full h-80 object-cover"
               />
             </div>
             <div className="absolute -bottom-8 -right-8 w-64 h-64 rounded-2xl overflow-hidden border-4 border-background glow-secondary z-20 hidden md:block">
               <img
-                src="/placeholder.svg"
+                src="/band-2.jpg"
                 alt="Grow Up Music Performance"
                 className="w-full h-full object-cover"
               />
@@ -50,7 +50,7 @@ const AboutSection = () => {
             </div>
 
             {/* Features */}
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               {[
                 {
                   icon: Rocket,

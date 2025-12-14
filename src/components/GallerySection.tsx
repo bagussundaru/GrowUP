@@ -7,30 +7,30 @@ const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const photos = [
-    { src: "/placeholder.svg", alt: "Performance 1" },
-    { src: "/placeholder.svg", alt: "Performance 2" },
-    { src: "/placeholder.svg", alt: "Performance 3" },
-    { src: "/placeholder.svg", alt: "Band Photo 1" },
-    { src: "/placeholder.svg", alt: "Band Photo 2" },
-    { src: "/placeholder.svg", alt: "Band Photo 3" },
+    { src: "/gallery-1.jpg", alt: "Performance 1" },
+    { src: "/gallery-2.jpg", alt: "Performance 2" },
+    { src: "/gallery-3.jpg", alt: "Performance 3" },
+    { src: "/band-1.jpg", alt: "Band Photo 1" },
+    { src: "/band-2.jpg", alt: "Band Photo 2" },
+    { src: "/band-3.jpg", alt: "Band Photo 3" },
   ];
 
   const videos = [
     {
       id: "video1",
-      thumbnail: "/placeholder.svg",
+      thumbnail: "/gallery-1.jpg",
       title: "Live Performance at Corporate Event",
       duration: "3:45",
     },
     {
       id: "video2",
-      thumbnail: "/placeholder.svg",
+      thumbnail: "/gallery-2.jpg",
       title: "Wedding Entertainment Highlights",
       duration: "4:20",
     },
     {
       id: "video3",
-      thumbnail: "/placeholder.svg",
+      thumbnail: "/gallery-3.jpg",
       title: "Acoustic Session - Top 40 Covers",
       duration: "5:12",
     },
@@ -74,7 +74,7 @@ const GallerySection = () => {
 
         {/* Photo Gallery */}
         {activeTab === "photo" && (
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
             {photos.map((photo, index) => (
               <div
                 key={index}
@@ -96,7 +96,7 @@ const GallerySection = () => {
 
         {/* Video Gallery */}
         {activeTab === "video" && (
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             {videos.map((video) => (
               <div
                 key={video.id}

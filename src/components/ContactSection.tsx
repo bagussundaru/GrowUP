@@ -104,7 +104,7 @@ const ContactSection = () => {
             </div>
 
             {/* Quick Contact Buttons */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Button
                 variant="cosmic"
                 size="lg"
@@ -170,7 +170,7 @@ const ContactSection = () => {
                   placeholder="08xxxxxxxxxx"
                 />
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm text-muted-foreground mb-2">
                     Jenis Acara

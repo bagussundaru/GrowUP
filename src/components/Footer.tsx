@@ -15,10 +15,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <a href="#" className="flex items-center gap-2 mb-4">
+            <a href="#" className="flex items-center gap-3 mb-4">
               <div className="relative">
-                <Music className="w-8 h-8 text-primary" />
-                <Sparkles className="w-4 h-4 text-cosmic-cyan absolute -top-1 -right-1" />
+                <img 
+                  src="/grow-up-logo.jpg" 
+                  alt="Grow Up Music Logo" 
+                  className="w-10 h-10 rounded-full object-cover glow-primary"
+                />
               </div>
               <span className="font-orbitron font-bold text-xl text-gradient-cosmic">
                 GROW UP MUSIC

@@ -41,8 +41,17 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
+          {/* Logo Banner */}
+          <div className="mb-8 animate-fade-in">
+            <img 
+              src="/grow-up-logo.jpg" 
+              alt="Grow Up Music Entertainment Logo" 
+              className="w-80 h-40 sm:w-96 sm:h-48 md:w-[500px] md:h-60 mx-auto object-cover rounded-2xl glow-primary hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mb-6 animate-fade-in animation-delay-200">
             <Star className="w-4 h-4 text-primary fill-primary" />
             <span className="text-sm font-medium text-muted-foreground">
               Professional Music Entertainment
@@ -51,21 +60,21 @@ const HeroSection = () => {
           </div>
 
           {/* Title */}
-          <h1 className="font-orbitron text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-slide-up">
+          <h1 className="font-orbitron text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up animation-delay-400">
             <span className="text-gradient-cosmic">GROW UP</span>
             <br />
-            <span className="text-foreground">MUSIC</span>
+            <span className="text-foreground">MUSIC ENTERTAINMENT</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="font-exo text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-200">
+          <p className="font-exo text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-600">
             Menjelajahi Harmoni di Galaksi Musik
             <br />
             <span className="text-primary">Entertainment Profesional</span> untuk Setiap Momen Istimewa Anda
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up animation-delay-400 px-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up animation-delay-800 px-4">
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">
                 <Play className="w-5 h-5" />

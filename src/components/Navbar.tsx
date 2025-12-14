@@ -32,12 +32,15 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
+        <a href="#" className="flex items-center gap-3 group">
           <div className="relative">
-            <Music className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
-            <Sparkles className="w-4 h-4 text-cosmic-cyan absolute -top-1 -right-1 animate-pulse" />
+            <img 
+              src="/grow-up-logo.jpg" 
+              alt="Grow Up Music Logo" 
+              className="w-12 h-12 rounded-full object-cover group-hover:scale-110 transition-transform duration-300 glow-primary"
+            />
           </div>
-          <span className="font-orbitron font-bold text-xl text-gradient-cosmic">
+          <span className="font-orbitron font-bold text-lg md:text-xl text-gradient-cosmic">
             GROW UP MUSIC
           </span>
         </a>

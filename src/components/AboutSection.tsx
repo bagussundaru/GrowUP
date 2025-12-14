@@ -32,11 +32,18 @@ const AboutSection = () => {
               <span className="inline-block font-orbitron text-sm text-primary mb-2 tracking-widest">
                 TENTANG KAMI
               </span>
-              <h2 className="font-orbitron text-4xl md:text-5xl font-bold mb-6">
-                <span className="text-gradient-cosmic">Grow Up Music</span>
-                <br />
-                <span className="text-foreground">Entertainment</span>
-              </h2>
+              <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src="/grow-up-logo.jpg" 
+                  alt="Grow Up Music Logo" 
+                  className="w-16 h-16 rounded-full object-cover glow-primary"
+                />
+                <h2 className="font-orbitron text-3xl md:text-4xl font-bold">
+                  <span className="text-gradient-cosmic">Grow Up Music</span>
+                  <br />
+                  <span className="text-foreground">Entertainment</span>
+                </h2>
+              </div>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 Grow Up Music Entertainment menyediakan beberapa format musik seperti 
                 <span className="text-primary font-semibold"> Fullband</span>, 

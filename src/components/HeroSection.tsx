@@ -33,9 +33,9 @@ const HeroSection = () => {
           {/* Logo Banner */}
           <div className="mb-8 animate-fade-in">
             <img 
-              src="/grow-up-logo-new.png" 
+              src="/grow-up-logo.ico" 
               alt="Grow Up Music Entertainment Logo" 
-              className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 mx-auto object-contain rounded-full shadow-2xl hover:scale-105 transition-transform duration-500 border-4 border-primary/30"
+              className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 mx-auto object-contain hover:scale-105 transition-transform duration-500"
               loading="eager"
             />
           </div>

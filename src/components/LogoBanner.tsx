@@ -24,9 +24,9 @@ const LogoBanner = () => {
             
             {/* Logo */}
             <img 
-              src="/grow-up-logo-new.png" 
+              src="/grow-up-logo.ico" 
               alt="Grow Up Music Entertainment - Official Logo" 
-              className="w-80 h-80 sm:w-96 sm:h-96 mx-auto object-contain rounded-full shadow-2xl group-hover:scale-105 transition-all duration-700 border-4 border-primary/30"
+              className="w-64 h-64 sm:w-72 sm:h-72 mx-auto object-contain group-hover:scale-105 transition-all duration-700"
               loading="lazy"
             />
             

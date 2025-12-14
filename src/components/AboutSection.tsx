@@ -34,9 +34,9 @@ const AboutSection = () => {
               </span>
               <div className="flex items-center gap-4 mb-6">
                 <img 
-                  src="/grow-up-logo-new.png" 
+                  src="/grow-up-logo.ico" 
                   alt="Grow Up Music Logo" 
-                  className="w-14 h-14 rounded-full object-cover shadow-lg border-2 border-primary/30"
+                  className="w-12 h-12 object-contain"
                   loading="lazy"
                 />
                 <h2 className="font-orbitron text-3xl md:text-4xl font-bold">

@@ -1,6 +1,7 @@
 import StarField from "@/components/StarField";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import LogoBanner from "@/components/LogoBanner";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServiceSection";
 import GallerySection from "@/components/GallerySection";
@@ -21,6 +22,9 @@ const Index = () => {
       
       {/* Hero Section */}
       <HeroSection />
+      
+      {/* Logo Banner Section */}
+      <LogoBanner />
       
       {/* About Section */}
       <AboutSection />

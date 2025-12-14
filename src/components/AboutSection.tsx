@@ -2,10 +2,8 @@ import { Rocket, Target, Users, Zap } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 relative">
-      {/* Section overlay for better readability */}
-      <div className="absolute inset-0 bg-background/10 backdrop-blur-sm" />
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="about" className="py-24 relative section-clean">
+      <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Images */}
           <div className="relative">
@@ -36,9 +34,10 @@ const AboutSection = () => {
               </span>
               <div className="flex items-center gap-4 mb-6">
                 <img 
-                  src="/grow-up-logo.jpg" 
+                  src="/grow-up-logo.webp" 
                   alt="Grow Up Music Logo" 
-                  className="w-16 h-16 rounded-full object-cover glow-primary"
+                  className="w-14 h-14 rounded-full object-cover shadow-lg border-2 border-primary/30"
+                  loading="lazy"
                 />
                 <h2 className="font-orbitron text-3xl md:text-4xl font-bold">
                   <span className="text-gradient-cosmic">Grow Up Music</span>

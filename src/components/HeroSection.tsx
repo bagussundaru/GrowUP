@@ -3,11 +3,7 @@ import { Button } from "./ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background/40" />
-      </div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden section-clean">
 
       {/* Floating Music Elements - Hidden on mobile for better performance */}
       <div className="hidden md:block absolute top-1/4 left-10 animate-float animation-delay-200">
@@ -37,9 +33,10 @@ const HeroSection = () => {
           {/* Logo Banner */}
           <div className="mb-8 animate-fade-in">
             <img 
-              src="/grow-up-logo.jpg" 
+              src="/grow-up-logo.webp" 
               alt="Grow Up Music Entertainment Logo" 
-              className="w-80 h-40 sm:w-96 sm:h-48 md:w-[500px] md:h-60 mx-auto object-cover rounded-2xl glow-primary hover:scale-105 transition-transform duration-500"
+              className="w-72 h-36 sm:w-80 sm:h-40 md:w-96 md:h-48 mx-auto object-contain rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500 bg-black/20 backdrop-blur-sm border border-primary/30"
+              loading="eager"
             />
           </div>
 

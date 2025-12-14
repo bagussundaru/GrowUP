@@ -54,10 +54,8 @@ const PricingSection = () => {
   ];
 
   return (
-    <section id="pricing" className="py-24 relative">
-      {/* Section overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/20 to-background/30 backdrop-blur-sm" />
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="pricing" className="py-24 relative section-clean">
+      <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block font-orbitron text-sm text-primary mb-2 tracking-widest">

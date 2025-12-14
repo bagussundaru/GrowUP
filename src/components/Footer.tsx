@@ -18,9 +18,10 @@ const Footer = () => {
             <a href="#" className="flex items-center gap-3 mb-4">
               <div className="relative">
                 <img 
-                  src="/grow-up-logo.jpg" 
+                  src="/grow-up-logo.webp" 
                   alt="Grow Up Music Logo" 
-                  className="w-10 h-10 rounded-full object-cover glow-primary"
+                  className="w-8 h-8 rounded-full object-cover shadow-md border border-primary/30"
+                  loading="lazy"
                 />
               </div>
               <span className="font-orbitron font-bold text-xl text-gradient-cosmic">

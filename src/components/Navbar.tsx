@@ -35,9 +35,10 @@ const Navbar = () => {
         <a href="#" className="flex items-center gap-3 group">
           <div className="relative">
             <img 
-              src="/grow-up-logo.jpg" 
+              src="/grow-up-logo.webp" 
               alt="Grow Up Music Logo" 
-              className="w-12 h-12 rounded-full object-cover group-hover:scale-110 transition-transform duration-300 glow-primary"
+              className="w-10 h-10 rounded-full object-cover group-hover:scale-110 transition-transform duration-300 shadow-lg border-2 border-primary/30"
+              loading="eager"
             />
           </div>
           <span className="font-orbitron font-bold text-lg md:text-xl text-gradient-cosmic">

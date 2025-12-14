@@ -2,12 +2,10 @@ import { Sparkles, Rocket } from "lucide-react";
 
 const LogoBanner = () => {
   return (
-    <section className="py-16 relative overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-r from-cosmic-purple/10 via-transparent to-cosmic-cyan/10" />
-      <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
-      <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-cosmic-purple/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-cosmic-cyan/20 rounded-full blur-2xl animate-pulse animation-delay-1000" />
+    <section className="py-16 relative overflow-hidden section-clean">
+      {/* Subtle background effects only */}
+      <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-cosmic-purple/10 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-cosmic-cyan/10 rounded-full blur-2xl animate-pulse animation-delay-1000" />
       
       <div className="container mx-auto px-4 text-center relative z-10">
         {/* Main Logo Display */}
@@ -26,9 +24,10 @@ const LogoBanner = () => {
             
             {/* Logo */}
             <img 
-              src="/grow-up-logo.jpg" 
+              src="/grow-up-logo.webp" 
               alt="Grow Up Music Entertainment - Official Logo" 
-              className="w-full max-w-2xl h-auto rounded-3xl shadow-2xl glow-primary group-hover:scale-105 transition-all duration-700 border-2 border-primary/20"
+              className="w-full max-w-xl h-auto rounded-3xl shadow-2xl group-hover:scale-105 transition-all duration-700 border-2 border-primary/30 bg-black/10 backdrop-blur-sm"
+              loading="lazy"
             />
             
             {/* Glow Effect */}

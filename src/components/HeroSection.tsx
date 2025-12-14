@@ -4,39 +4,7 @@ import { Button } from "./ui/button";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden section-clean">
-      {/* Background Cosmic Logo - Transparent */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
-        <div className="relative w-96 h-96 sm:w-[500px] sm:h-[500px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px]">
-          {/* Outer Ring */}
-          <div className="absolute inset-0 rounded-full border-4 border-gradient-to-r from-cosmic-purple via-cosmic-cyan to-cosmic-pink animate-spin-slow"></div>
-          
-          {/* Middle Ring */}
-          <div className="absolute inset-8 rounded-full border-2 border-cosmic-cyan animate-pulse"></div>
-          
-          {/* Inner Ring */}
-          <div className="absolute inset-16 rounded-full border border-cosmic-purple/50 animate-spin-reverse"></div>
-          
-          {/* Inner Circle */}
-          <div className="absolute inset-24 rounded-full bg-gradient-to-br from-cosmic-purple/20 via-cosmic-cyan/10 to-cosmic-pink/20 backdrop-blur-sm flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-8xl sm:text-9xl md:text-[10rem] lg:text-[12rem] font-orbitron font-bold text-gradient-cosmic mb-4">
-                GU
-              </div>
-              <div className="text-2xl sm:text-3xl md:text-4xl text-cosmic-cyan font-orbitron tracking-widest">
-                MUSIC
-              </div>
-            </div>
-          </div>
-          
-          {/* Floating Elements */}
-          <div className="absolute top-8 right-16 w-6 h-6 rounded-full bg-cosmic-pink animate-float"></div>
-          <div className="absolute bottom-16 left-8 w-4 h-4 rounded-full bg-cosmic-cyan animate-twinkle"></div>
-          <div className="absolute top-1/3 left-4 w-3 h-3 rounded-full bg-star-glow animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-4 w-5 h-5 rounded-full bg-cosmic-purple animate-twinkle animation-delay-800"></div>
-          <div className="absolute top-1/2 left-12 w-2 h-2 rounded-full bg-cosmic-cyan animate-pulse animation-delay-400"></div>
-          <div className="absolute bottom-1/3 right-12 w-3 h-3 rounded-full bg-cosmic-pink animate-twinkle animation-delay-600"></div>
-        </div>
-      </div>
+
 
       {/* Floating Music Elements - Hidden on mobile for better performance */}
       <div className="hidden md:block absolute top-1/4 left-10 animate-float animation-delay-200 z-20">
@@ -57,6 +25,51 @@ const HeroSection = () => {
       <div className="hidden md:block absolute bottom-1/4 right-1/4 animate-float animation-delay-800 z-20">
         <div className="w-10 h-10 rounded-full glass-card flex items-center justify-center glow-primary">
           <span className="text-lg">🎻</span>
+        </div>
+      </div>
+
+      {/* Orbiting Letters Around Content Area - "GROW UP MUSIC" */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-25">
+        <div className="relative">
+          {/* GROW UP - Clockwise orbit */}
+          <span className="absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl font-orbitron font-bold text-cosmic-purple animate-orbit-large animate-glow-pulse-intense" 
+                style={{animationDelay: '0s'}}>G</span>
+          
+          <span className="absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl font-orbitron font-bold text-cosmic-cyan animate-orbit-large animate-glow-pulse-intense" 
+                style={{animationDelay: '1.8s'}}>R</span>
+          
+          <span className="absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl font-orbitron font-bold text-cosmic-pink animate-orbit-large animate-glow-pulse-intense" 
+                style={{animationDelay: '3.6s'}}>O</span>
+          
+          <span className="absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl font-orbitron font-bold text-star-glow animate-orbit-large animate-glow-pulse-intense" 
+                style={{animationDelay: '5.4s'}}>W</span>
+          
+          <span className="absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl font-orbitron font-bold text-cosmic-purple animate-orbit-large animate-glow-pulse-intense" 
+                style={{animationDelay: '7.2s'}}>U</span>
+          
+          <span className="absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl font-orbitron font-bold text-cosmic-cyan animate-orbit-large animate-glow-pulse-intense" 
+                style={{animationDelay: '9s'}}>P</span>
+          
+          {/* MUSIC - Counter-clockwise orbit */}
+          <span className="absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl font-orbitron font-bold text-cosmic-pink animate-orbit-large-reverse animate-glow-pulse-intense" 
+                style={{animationDelay: '0s'}}>M</span>
+          
+          <span className="absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl font-orbitron font-bold text-star-glow animate-orbit-large-reverse animate-glow-pulse-intense" 
+                style={{animationDelay: '2.5s'}}>U</span>
+          
+          <span className="absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl font-orbitron font-bold text-cosmic-purple animate-orbit-large-reverse animate-glow-pulse-intense" 
+                style={{animationDelay: '5s'}}>S</span>
+          
+          <span className="absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl font-orbitron font-bold text-cosmic-cyan animate-orbit-large-reverse animate-glow-pulse-intense" 
+                style={{animationDelay: '7.5s'}}>I</span>
+          
+          <span className="absolute top-1/2 left-1/2 text-4xl sm:text-5xl md:text-6xl font-orbitron font-bold text-cosmic-pink animate-orbit-large-reverse animate-glow-pulse-intense" 
+                style={{animationDelay: '10s'}}>C</span>
+          
+          {/* Musical symbols orbiting */}
+          <span className="absolute top-1/2 left-1/2 text-3xl text-star-glow animate-orbit-large animation-delay-500">♪</span>
+          <span className="absolute top-1/2 left-1/2 text-3xl text-cosmic-cyan animate-orbit-large-reverse animation-delay-800">♫</span>
+          <span className="absolute top-1/2 left-1/2 text-3xl text-cosmic-pink animate-orbit-large animation-delay-1200">♬</span>
         </div>
       </div>
 

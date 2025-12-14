@@ -54,7 +54,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section id="pricing" className="py-24 relative section-clean">
+    <section id="pricing" className="py-24 relative section-clean bg-nebula">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

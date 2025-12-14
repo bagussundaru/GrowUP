@@ -46,16 +46,6 @@
     --nebula-end: 280 60% 15%;
     --star-glow: 45 100% 80%;
 
-    /* Gradients */
-    --gradient-cosmic: linear-gradient(135deg, hsl(280 100% 70% / 0.8), hsl(195 100% 50% / 0.8));
-    --gradient-nebula: linear-gradient(180deg, hsl(222 47% 5%), hsl(280 60% 10%), hsl(222 47% 5%));
-    --gradient-card: linear-gradient(145deg, hsl(222 47% 10% / 0.9), hsl(280 40% 8% / 0.9));
-
-    /* Shadows */
-    --shadow-glow-primary: 0 0 30px hsl(280 100% 70% / 0.4);
-    --shadow-glow-secondary: 0 0 30px hsl(195 100% 50% / 0.4);
-    --shadow-glow-accent: 0 0 30px hsl(330 100% 65% / 0.4);
-
     --sidebar-background: 222 47% 8%;
     --sidebar-foreground: 210 40% 98%;
     --sidebar-primary: 280 100% 70%;
@@ -79,6 +69,8 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Exo 2', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -212,4 +204,53 @@
   .animation-delay-600 { animation-delay: 600ms; }
   .animation-delay-800 { animation-delay: 800ms; }
   .animation-delay-1000 { animation-delay: 1000ms; }
+}
+
+/* Clean background without custom image */
+.main-background {
+  background: linear-gradient(
+    135deg,
+    hsl(222 47% 5%) 0%,
+    hsl(280 60% 10%) 50%,
+    hsl(222 47% 5%) 100%
+  );
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Clean sections without overlays */
+.section-clean {
+  position: relative;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+  
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Better touch targets */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Improve text readability on mobile */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+  }
+  
+  /* Better spacing for mobile */
+  .py-24 {
+    @apply py-16;
+  }
+  
+  .py-16 {
+    @apply py-12;
+  }
 }

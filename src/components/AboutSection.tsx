@@ -1,4 +1,4 @@
-import { Rocket, Target, Users, Zap } from "lucide-react";
+import { Rocket, Target, Users, Zap, Music } from "lucide-react";
 
 const AboutSection = () => {
   return (

@@ -34,12 +34,14 @@ const Navbar = () => {
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
           <div className="relative">
-            <img 
-              src="/grow-up-logo.ico" 
-              alt="Grow Up Music Logo" 
-              className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
-              loading="eager"
-            />
+            {/* Custom Space Logo */}
+            <div className="w-10 h-10 relative group-hover:scale-110 transition-transform duration-300">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cosmic-purple via-cosmic-cyan to-cosmic-pink animate-pulse-glow"></div>
+              <div className="absolute inset-1 rounded-full bg-background flex items-center justify-center">
+                <Music className="w-5 h-5 text-primary" />
+              </div>
+              <div className="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-cosmic-cyan animate-twinkle"></div>
+            </div>
           </div>
           <span className="font-orbitron font-bold text-lg md:text-xl text-gradient-cosmic">
             GROW UP MUSIC

@@ -22,13 +22,37 @@ const LogoBanner = () => {
               <Sparkles className="w-4 h-4 text-cosmic-pink animate-pulse animation-delay-800" />
             </div>
             
-            {/* Logo */}
-            <img 
-              src="/grow-up-logo.ico" 
-              alt="Grow Up Music Entertainment - Official Logo" 
-              className="w-64 h-64 sm:w-72 sm:h-72 mx-auto object-contain group-hover:scale-105 transition-all duration-700"
-              loading="lazy"
-            />
+            {/* Spectacular Cosmic Logo */}
+            <div className="relative w-80 h-80 sm:w-96 sm:h-96 mx-auto group-hover:scale-105 transition-all duration-700">
+              {/* Galaxy Background */}
+              <div className="absolute inset-0 rounded-full bg-gradient-radial from-cosmic-purple/20 via-cosmic-cyan/10 to-transparent animate-pulse"></div>
+              
+              {/* Orbital Rings */}
+              <div className="absolute inset-8 rounded-full border border-cosmic-purple/30 animate-spin-slow"></div>
+              <div className="absolute inset-12 rounded-full border border-cosmic-cyan/40 animate-spin-reverse"></div>
+              <div className="absolute inset-16 rounded-full border border-cosmic-pink/30 animate-spin-slow animation-delay-1000"></div>
+              
+              {/* Central Logo */}
+              <div className="absolute inset-20 rounded-full bg-gradient-to-br from-background via-cosmic-purple/10 to-background backdrop-blur-md border border-primary/20 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl sm:text-5xl font-orbitron font-bold text-gradient-cosmic mb-2">
+                    GROW UP
+                  </div>
+                  <div className="text-lg sm:text-xl text-cosmic-cyan font-orbitron tracking-widest">
+                    MUSIC
+                  </div>
+                  <div className="text-xs text-muted-foreground mt-1 tracking-wider">
+                    ENTERTAINMENT
+                  </div>
+                </div>
+              </div>
+              
+              {/* Floating Stars */}
+              <div className="absolute top-8 right-12 w-3 h-3 rounded-full bg-star-glow animate-twinkle"></div>
+              <div className="absolute bottom-12 left-8 w-2 h-2 rounded-full bg-cosmic-pink animate-pulse"></div>
+              <div className="absolute top-1/4 left-4 w-2 h-2 rounded-full bg-cosmic-cyan animate-twinkle animation-delay-600"></div>
+              <div className="absolute bottom-1/3 right-4 w-3 h-3 rounded-full bg-cosmic-purple animate-pulse animation-delay-400"></div>
+            </div>
             
             {/* Glow Effect */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-primary/20 via-transparent to-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />

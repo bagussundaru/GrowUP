@@ -30,14 +30,33 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          {/* Logo Banner */}
+          {/* Cosmic Logo Design */}
           <div className="mb-8 animate-fade-in">
-            <img 
-              src="/grow-up-logo.ico" 
-              alt="Grow Up Music Entertainment Logo" 
-              className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 mx-auto object-contain hover:scale-105 transition-transform duration-500"
-              loading="eager"
-            />
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 mx-auto">
+              {/* Outer Ring */}
+              <div className="absolute inset-0 rounded-full border-4 border-gradient-to-r from-cosmic-purple via-cosmic-cyan to-cosmic-pink animate-spin-slow opacity-60"></div>
+              
+              {/* Middle Ring */}
+              <div className="absolute inset-4 rounded-full border-2 border-cosmic-cyan animate-pulse opacity-80"></div>
+              
+              {/* Inner Circle */}
+              <div className="absolute inset-8 rounded-full bg-gradient-to-br from-cosmic-purple/30 via-background to-cosmic-cyan/30 backdrop-blur-sm flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-6xl sm:text-7xl md:text-8xl font-orbitron font-bold text-gradient-cosmic mb-2">
+                    GU
+                  </div>
+                  <div className="text-sm sm:text-base text-cosmic-cyan font-orbitron tracking-widest">
+                    MUSIC
+                  </div>
+                </div>
+              </div>
+              
+              {/* Floating Elements */}
+              <div className="absolute top-4 right-8 w-4 h-4 rounded-full bg-cosmic-pink animate-float"></div>
+              <div className="absolute bottom-8 left-4 w-3 h-3 rounded-full bg-cosmic-cyan animate-twinkle"></div>
+              <div className="absolute top-1/3 left-2 w-2 h-2 rounded-full bg-star-glow animate-pulse"></div>
+              <div className="absolute bottom-1/4 right-2 w-2 h-2 rounded-full bg-cosmic-purple animate-twinkle animation-delay-800"></div>
+            </div>
           </div>
 
           {/* Badge */}

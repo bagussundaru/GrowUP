@@ -33,12 +33,12 @@ const AboutSection = () => {
                 TENTANG KAMI
               </span>
               <div className="flex items-center gap-4 mb-6">
-                <img 
-                  src="/grow-up-logo.ico" 
-                  alt="Grow Up Music Logo" 
-                  className="w-12 h-12 object-contain"
-                  loading="lazy"
-                />
+                <div className="w-12 h-12 relative">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cosmic-purple to-cosmic-cyan animate-pulse-glow"></div>
+                  <div className="absolute inset-1 rounded-full bg-background flex items-center justify-center">
+                    <Music className="w-6 h-6 text-primary" />
+                  </div>
+                </div>
                 <h2 className="font-orbitron text-3xl md:text-4xl font-bold">
                   <span className="text-gradient-cosmic">Grow Up Music</span>
                   <br />

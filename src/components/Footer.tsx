@@ -17,12 +17,12 @@ const Footer = () => {
           <div className="md:col-span-2">
             <a href="#" className="flex items-center gap-3 mb-4">
               <div className="relative">
-                <img 
-                  src="/grow-up-logo.ico" 
-                  alt="Grow Up Music Logo" 
-                  className="w-8 h-8 object-contain"
-                  loading="lazy"
-                />
+                <div className="w-8 h-8 relative">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cosmic-purple to-cosmic-cyan opacity-80"></div>
+                  <div className="absolute inset-0.5 rounded-full bg-background flex items-center justify-center">
+                    <Music className="w-4 h-4 text-primary" />
+                  </div>
+                </div>
               </div>
               <span className="font-orbitron font-bold text-xl text-gradient-cosmic">
                 GROW UP MUSIC

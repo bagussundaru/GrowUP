@@ -4,16 +4,9 @@ import { Button } from "./ui/button";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(/hero-bg.jpg)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background/40" />
       </div>
 
       {/* Floating Music Elements - Hidden on mobile for better performance */}

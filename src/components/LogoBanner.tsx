@@ -5,6 +5,7 @@ const LogoBanner = () => {
     <section className="py-16 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-r from-cosmic-purple/10 via-transparent to-cosmic-cyan/10" />
+      <div className="absolute inset-0 bg-background/20 backdrop-blur-sm" />
       <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-cosmic-purple/20 rounded-full blur-3xl animate-pulse" />
       <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-cosmic-cyan/20 rounded-full blur-2xl animate-pulse animation-delay-1000" />
       

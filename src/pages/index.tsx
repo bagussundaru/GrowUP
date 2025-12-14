@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <main className="min-h-screen main-background text-foreground overflow-x-hidden">
       {/* Animated Star Background */}
       <StarField />
       

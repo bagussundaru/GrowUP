@@ -3,7 +3,9 @@ import { Rocket, Target, Users, Zap } from "lucide-react";
 const AboutSection = () => {
   return (
     <section id="about" className="py-24 relative">
-      <div className="container mx-auto px-4">
+      {/* Section overlay for better readability */}
+      <div className="absolute inset-0 bg-background/10 backdrop-blur-sm" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Images */}
           <div className="relative">

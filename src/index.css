@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Space Theme - Dark cosmic palette */
+    --background: 222 47% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 280 100% 70%;
+    --primary-foreground: 222 47% 5%;
+
+    --secondary: 195 100% 50%;
+    --secondary-foreground: 222 47% 5%;
+
+    --muted: 222 30% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 330 100% 65%;
+    --accent-foreground: 222 47% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 30% 20%;
+    --input: 222 30% 20%;
+    --ring: 280 100% 70%;
+
+    --radius: 0.75rem;
+
+    /* Custom space colors */
+    --cosmic-purple: 280 100% 70%;
+    --cosmic-blue: 220 100% 60%;
+    --cosmic-cyan: 195 100% 50%;
+    --cosmic-pink: 330 100% 65%;
+    --nebula-start: 222 47% 8%;
+    --nebula-end: 280 60% 15%;
+    --star-glow: 45 100% 80%;
+
+    /* Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(280 100% 70% / 0.8), hsl(195 100% 50% / 0.8));
+    --gradient-nebula: linear-gradient(180deg, hsl(222 47% 5%), hsl(280 60% 10%), hsl(222 47% 5%));
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 10% / 0.9), hsl(280 40% 8% / 0.9));
+
+    /* Shadows */
+    --shadow-glow-primary: 0 0 30px hsl(280 100% 70% / 0.4);
+    --shadow-glow-secondary: 0 0 30px hsl(195 100% 50% / 0.4);
+    --shadow-glow-accent: 0 0 30px hsl(330 100% 65% / 0.4);
+
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 280 100% 70%;
+    --sidebar-primary-foreground: 222 47% 5%;
+    --sidebar-accent: 222 30% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 222 30% 20%;
+    --sidebar-ring: 280 100% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Exo 2', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+@layer components {
+  .text-gradient-cosmic {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--cosmic-purple)), hsl(var(--cosmic-cyan)));
+  }
+
+  .text-gradient-warm {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--cosmic-pink)), hsl(var(--cosmic-purple)));
+  }
+
+  .bg-nebula {
+    background: linear-gradient(180deg, hsl(222 47% 5%), hsl(280 60% 10% / 0.5), hsl(222 47% 5%));
+  }
+
+  .glass-card {
+    @apply backdrop-blur-xl border border-border/50;
+    background: linear-gradient(145deg, hsl(222 47% 10% / 0.7), hsl(280 40% 8% / 0.5));
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 30px hsl(var(--cosmic-purple) / 0.4), 0 0 60px hsl(var(--cosmic-purple) / 0.2);
+  }
+
+  .glow-secondary {
+    box-shadow: 0 0 30px hsl(var(--cosmic-cyan) / 0.4), 0 0 60px hsl(var(--cosmic-cyan) / 0.2);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 30px hsl(var(--cosmic-pink) / 0.4), 0 0 60px hsl(var(--cosmic-pink) / 0.2);
+  }
+
+  .hover-glow {
+    @apply transition-all duration-500;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 40px hsl(var(--cosmic-purple) / 0.6), 0 0 80px hsl(var(--cosmic-cyan) / 0.3);
+  }
+
+  .border-glow {
+    @apply border border-primary/30;
+    box-shadow: inset 0 0 20px hsl(var(--cosmic-purple) / 0.1);
+  }
+}
+
+@layer utilities {
+  /* Star animation */
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px hsl(var(--cosmic-purple) / 0.4); }
+    50% { box-shadow: 0 0 40px hsl(var(--cosmic-purple) / 0.8), 0 0 60px hsl(var(--cosmic-cyan) / 0.4); }
+  }
+
+  @keyframes orbit {
+    0% { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+  }
+
+  @keyframes slide-up {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes scale-in {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+
+  .animate-twinkle {
+    animation: twinkle 3s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  .animate-orbit {
+    animation: orbit 20s linear infinite;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.6s ease-out forwards;
+  }
+
+  .animate-shimmer {
+    background-size: 200% auto;
+    animation: shimmer 3s linear infinite;
+  }
+
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-600 { animation-delay: 600ms; }
+  .animation-delay-800 { animation-delay: 800ms; }
+  .animation-delay-1000 { animation-delay: 1000ms; }
+}
